@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Text to Speech with Camera Access</title>
+    <style>
+      body {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        height: 100vh;
+      }
+
+      #camera {
+        width: 50%;
+        height: 50%;
+        object-fit: cover;
+      }
+
+      .text {
+        font-size: 2rem;
+        margin: 1rem;
+        cursor: pointer;
+      }
+    </style>
+  </head>
+  <body>
+    <video id="camera" playsinline autoplay></video>
+
+    <div class="text" id="text1">Hello, World!</div>
+    <div class="text" id="text2">This is a test.</div>
+
+    <script src="script.js"></script>
+  </body>
+</html>
